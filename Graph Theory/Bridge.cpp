@@ -34,7 +34,7 @@ void dfs(int u)
             /// special condition , if u is root  and u has many child , then u is AP
             if(parent[u] == -1 && children > 1)
                 ap.push_back(u);
-            /// if root is not many child
+            /// if root has not many child
 
             if(parent[u] != -1 && low[v] >= dis[u])
                 ap.push_back(u);
